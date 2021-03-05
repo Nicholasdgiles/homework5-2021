@@ -130,33 +130,33 @@ header{
 /*Req 8a, 8b, and 8c*/
 .about-image, .method-image, .client-image, .contact-image{
   /*Your Code Here*/
-  grid-column: 1 / span 3, minmax(auto, 650px);
+  grid-column: 1 / span 3;
   overflow: hidden;
-  grid-auto-rows: 1 / span 1;
+  max-height: 650px;
 }
 
 /*Req 7b & 8d*/
 .about, .about-image{
    /*Your Code Here*/
-  grid-auto-rows: 1 / span 1;
+  grid-row: 1 / span 1;
 }
 
 /*Req 7b & 8d*/
 .method, .method-image{
    /*Your Code Here*/
-  grid-auto-rows: 1 / span 1;
+  grid-row: 2 / span 2;
 }
 
 /*Req 7b & 8d*/
 .client, .client-image{
     /*Your Code Here*/
-  grid-auto-rows: 1 / span 1;
+  grid-row: 3 / span 3;
 }
 
 /*Req 7b & 8d*/
 .contacts, .contact-image{
     /*Your Code Here*/
-  grid-auto-rows: 1 / span 1;
+  grid-row: 4 / span 4;
 }
 
 /*Req 9*/
@@ -179,7 +179,7 @@ header{
   nav{
     padding: 30px 0px;
     /*Your code here:*/
-    align: center;
+    text-align: center;
   }
 
   /*Req 11*/
