@@ -118,7 +118,7 @@ header{
 
   /*Req 6b*/
   /*Set background-image to header.jpg */
-  background-image: url('../images/header.jpg');
+  background-image: url("../images/header.jpg");
 
 }
 /*Req 7a*/
@@ -131,8 +131,8 @@ header{
 .about-image, .method-image, .client-image, .contact-image{
   /*Your Code Here*/
   grid-column: 1 / span 3;
-  overflow: hidden;
   max-height: 650px;
+  overflow: hidden;
 }
 
 /*Req 7b & 8d*/
@@ -169,33 +169,33 @@ header{
 }
 
 
-@media all and (min-width: 880px){
+/*@media all and (min-width: 880px){
 
   img{
      width:100%;
   }
 
   /*Req 10*/
-  nav{
+  /*nav{
     padding: 30px 0px;
     /*Your code here:*/
-    text-align: center;
+    /*text-align: center;
   }
 
   /*Req 11*/
-  .container{
+  /*.container{
     /*Your code here:*/
-  }
+/*  }
 
   /*Req 12*/
-  .about, .client, .method-image, .contact-image{
+  /*.about, .client, .method-image, .contact-image{
     /*Your code here:*/
-  }
+/*  }
 
   /*Req 13*/
-  .about-image, .client-image, .method, .contacts{
+/*  .about-image, .client-image, .method, .contacts{
     /*Your code here:*/
-  }
+/*  }
 }
 
 
@@ -205,18 +205,18 @@ It is included for accessibility to turn off animations
 and movement for people who have modified their
 preferences to reduce motion.*/
 
-@media screen and (prefers-reduced-motion: reduce){
+/*@media screen and (prefers-reduced-motion: reduce){
   html{
       scroll-behavior: auto; /* Removes scroll animation */
-  }
+/*  }
 
   .skip a{
     -webkit-transition: none; /* sets to default setting */
-    transition: none;        /* sets to default setting */
-   }
+/*    transition: none;        /* sets to default setting */
+/*   }
 
   /*Turn off parallax*/
-  header{
+/*  header{
     background-attachment: initial;
   }
 }
