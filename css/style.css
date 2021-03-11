@@ -1,9 +1,4 @@
-/*BEGIN STARTER CSS - DO NOT CHANGE*/
-* {
-  display: grid;
-}
-
-html {
+/*BEGIN STARTER CSS - DO NOT CHANGE*/html {
     scroll-behavior: smooth;
 }
 
@@ -101,7 +96,7 @@ a:hover {
   display: grid;
   grid-row-gap: 20px;
   grid-template-columns: 1fr 3fr 3fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto auto auto auto;
 }
 
 header{
@@ -124,13 +119,15 @@ header{
 /*Req 7a*/
 .about, .method, .client, .contacts{
   /*Your Code Here*/
-  grid-column: 2 / span 3;
+  grid-column: 2 / span 2;
 }
 
 /*Req 8a, 8b, and 8c*/
 .about-image, .method-image, .client-image, .contact-image{
   /*Your Code Here*/
-  grid-column: 1 / span 3;
+  /* can also use 1 / -1 to span all grids*/
+
+  grid-column: 1 / span 4;
   max-height: 650px;
   overflow: hidden;
 }
@@ -144,19 +141,19 @@ header{
 /*Req 7b & 8d*/
 .method, .method-image{
    /*Your Code Here*/
-  grid-row: 2 / span 2;
+  grid-row: 2 / span 1;
 }
 
 /*Req 7b & 8d*/
 .client, .client-image{
     /*Your Code Here*/
-  grid-row: 3 / span 3;
+  grid-row: 3 / span 1;
 }
 
 /*Req 7b & 8d*/
 .contacts, .contact-image{
     /*Your Code Here*/
-  grid-row: 4 / span 4;
+  grid-row: 4 / span 1;
 }
 
 /*Req 9*/
@@ -165,5 +162,6 @@ header{
   border: 10px solid black;
   padding: 30px;
   /*Your code here:*/
-  text-align: center;
+  align-self: center; /*this needs to be changed*/
+  /* google align properties within grid (container and grid items) - can check piazza for more hints*/
 }
